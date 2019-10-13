@@ -1,0 +1,31 @@
+{
+  "name": "mint-onlinestore",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Igelness/mint-onlinestore.git"
+  },
+  "author": "Anton Vorobyov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Igelness/mint-onlinestore/issues"
+  },
+  "homepage": "https://github.com/Igelness/mint-onlinestore#readme",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
