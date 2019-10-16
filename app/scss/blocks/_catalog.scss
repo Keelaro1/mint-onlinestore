@@ -39,7 +39,7 @@
   background-color: #ecf0f1;
   display: block;
   min-width: 255px;
-  padding: 8px 10px;
+  padding: 0px 10px;
   position: relative;
   &:last-child {
     border-bottom-left-radius: 5px;
@@ -66,9 +66,8 @@
   color: #2ecc71;
   position: absolute;
   font-weight: bold;
-  width: 10px;
-  height: 10px;
   left: 10px;
+  top: 8px;
 }
 
 .catalog__menu-item-link {
@@ -76,8 +75,9 @@
   text-decoration: none !important;
   width: 100%;
   padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #2ecc71;
-  min-height: 100%;
 }
 
 .catalog__menu-nested {
