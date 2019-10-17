@@ -1,0 +1,205 @@
+.goods {
+  margin-top: 90px;
+  position: relative;
+}
+
+.goods__top {
+  margin-bottom: 80px;
+}
+
+.goods__arrow-left,
+.goods__arrow-right {
+  background-image: url(../images/goods-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #ecf0f1;
+  a {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.goods__arrow-left:hover {
+  background-image: url(../images/arrow-hover.png);
+  background-color: #34495e;
+  transform: rotate(180deg);
+}
+
+.goods__arrow-right {
+  transform: rotate(180deg);
+  float: right;
+  &:hover {
+    background-color: #34495e;
+    background-image: url(../images/arrow-hover.png);
+    transform: rotate(0deg);
+  }
+}
+
+.goods__names {
+  display: flex;
+  justify-content: center;
+}
+
+.goods__names-item {
+  background-color: #ecf0f1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 53px;
+  border-radius: 5px;
+  min-width: 210px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #34495e;
+    width: 100%;
+  }
+  &:hover {
+    background-color: #34495e;
+    a {
+      color: #ecf0f1;
+    }
+  }
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.goods__line {
+  width: 1110px;
+  position: relative;
+  bottom: 26px;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #ecf0f1;
+  z-index: -1;
+}
+
+.goods__item-img {
+  border: 1px solid #ecf0f1;
+  position: relative;
+  img {
+    max-width: 251px;
+  }
+  &:hover {
+    border: 1px solid #2ecc71;
+    cursor: pointer;
+  }
+}
+
+.goods__item-img:after {
+  content: "Хит";
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 49px;
+  background-image: url(../images/goods-hit.png);
+  width: 49px;
+  height: 49px;
+  top: 0;
+  right: 0;
+}
+
+.goods__item-img-sub {
+  color: #1abc9c;
+  line-height: 22px;
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px 3px 38px;
+  position: relative;
+  span {
+    display: block;
+    color: #e74c3c;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 28px;
+      height: 29px;
+      background-image: url(../images/goods-notavailable.png);
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 29px;
+    background-image: url(../images/goods-available.png);
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.goods__item-desc {
+  line-height: 22px;
+  color: #34495e;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.goods__item-price {
+  font-size: 20px;
+  color: #2ecc71;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 12px;
+  span {
+    color: #bdc3c7;
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+}
+
+.goods__item-buy {
+  background-color: #2ecc71;
+  line-height: 22px;
+  text-align: center;
+  max-width: 170px;
+  margin: 0 auto;
+  border-radius: 5px;
+  a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #fff;
+    width: 100%;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #34495e;
+  }
+}
+
+.goods__item-instabuy {
+  margin-top: 15px;
+  line-height: 22px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #95a5a6;
+    border-bottom: 2px dashed #95a5a6;
+    &:hover {
+      color: #2ecc71;
+      border-bottom: 2px dashed #2ecc71;
+    }
+  }
+}
+
+.goods__all-hits {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 74px;
+  a {
+    color: #34495e;
+    text-decoration: none;
+    border-bottom: 2px dashed #34495e;
+  }
+}
